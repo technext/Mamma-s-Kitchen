@@ -171,9 +171,8 @@ body
 
 .form-control {
 	border-radius: 0px;
-	padding: 10px 20px;
+	padding: 22px 20px;
 	margin-bottom: 25px;
-	height: 43px;
 }
 
 input.empty, textarea.empty {
@@ -225,6 +224,7 @@ input.empty, textarea.empty {
 	margin: 0px 18px;
 	padding: 18px 0px;
 	font-size: 14px;
+	text-align: center;
 
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover
@@ -259,6 +259,11 @@ input.empty, textarea.empty {
   	width: 205px;
 }
 
+.navbar-default .navbar-collapse {
+	border-color: #669D38;
+	background-color: #8BC34A;
+}
+
 /*-----------------------------------------------
 		navbar shrinking
 -----------------------------------------------*/
@@ -286,6 +291,10 @@ nav.shrink .navbar-brand {
 nav.shrink .navbar-toggle {
 	padding: 4px 5px;
 	margin: 8px 15px 8px 0;
+}
+
+.navbar-default.shrink .navbar-collapse {
+    border-color: transparent;
 }
 
 /*=================================================
