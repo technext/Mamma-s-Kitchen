@@ -60,7 +60,7 @@
                 <div class="container">
                     <div class="header-content">
                         <h1 class="header-title">BEST FOOD</h1>
-                        <p class="header-sub-title">Create your own slogan</p>
+                        <p class="header-sub-title">creat your own slogan</p>
                     </div> <!-- /.header-content -->
                 </div>
             </div>
@@ -68,7 +68,7 @@
                 <div class="container">
                     <div class="header-content">
                         <h1 class="header-title">BEST SNACKS</h1>
-                        <p class="header-sub-title">Create your own slogan</p>
+                        <p class="header-sub-title">creat your own slogan</p>
                     </div> <!-- /.header-content -->
                 </div>
             </div>
@@ -76,7 +76,7 @@
                 <div class="container">
                     <div class="header-content text-right pull-right">
                         <h1 class="header-title">BEST DRINKS</h1>
-                        <p class="header-sub-title">Create your own slogan</p>
+                        <p class="header-sub-title">creat your own slogan</p>
                     </div> <!-- /.header-content -->
                 </div>
             </div>
@@ -663,7 +663,7 @@
 
                                 <!-- Loading Screen -->
                                 <div u="loading" style="position: absolute; top: 0px; left: 0px;">
-                                    <div style="filter: alpha(opacity=0); opacity:0; position: absolute; display: block;
+                                    <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
                                         background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;">
                                     </div>
                                     <div style="position: absolute; display: block; background: url(../images/loading.gif) no-repeat center center;
@@ -790,35 +790,35 @@
                     <div class=" section-content">
                         <div class="row">
                             <div class="col-md-5 col-sm-6">
-                                <form class="reservation-form">
+                                <form class="reservation-form" method="post" action="reserve.php">
                                     <div class="row">
                                         <div class="col-md-6 col-sm-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control reserve-form empty iconified" id="name" placeholder="  &#xf007;  Name">
+                                                <input type="text" class="form-control reserve-form empty iconified" name="name" id="name" required="required" placeholder="  &#xf007;  Name">
                                             </div>
                                             <div class="form-group">
-                                                <input type="email" class="form-control reserve-form empty iconified" id="email" placeholder="  &#xf1d8;  e-mail">
+                                                <input type="email" name="email" class="form-control reserve-form empty iconified" id="email" required="required" placeholder="  &#xf1d8;  e-mail">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6 col-sm-6">
                                             <div class="form-group">
-                                                <input type="tel" class="form-control reserve-form empty iconified" id="phone" placeholder="  &#xf095;  Phone">
+                                                <input type="tel" class="form-control reserve-form empty iconified" name="phone" id="phone" required="required" placeholder="  &#xf095;  Phone">
                                             </div>
                                             <div class="form-group">
-                                                <input type="datetime-local" class="form-control reserve-form empty iconified" name="datepicker" id="datepicker" placeholder="&#xf017;  Time">
+                                                <input type="text" class="form-control reserve-form empty iconified" name="datepicker" id="datepicker" required="required" placeholder="&#xf017;  Time">
                                             </div>
                                         </div>
 
                                         <div class="col-md-12 col-sm-12">
-                                            <textarea type="text" class="form-control reserve-form empty iconified" id="message" rows="3" placeholder="  &#xf086;  We're listening"></textarea>
+                                            <textarea type="text" name="message" class="form-control reserve-form empty iconified" id="message" rows="3" required="required" placeholder="  &#xf086;  We're listening"></textarea>
                                         </div>
 
                                         <div class="col-md-12 col-sm-12">
-                                            <a href="#" class="btn btn-reservation">
+                                            <button type="submit" id="submit" name="submit" class="btn btn-reservation">
                                                 <span><i class="fa fa-check-circle-o"></i></span>
                                                 Make a reservation
-                                            </a>
+                                            </button>
                                         </div>
                                             
                                     </div>
@@ -884,8 +884,6 @@
             </div>
         </section>
 
-
-
         <div class="container-fluid">
             <div class="row">
                 <div class="gmap">
@@ -897,33 +895,32 @@
 
 
 
-
         <section class="contact-form">
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
                         <div class="row">
-                             <form class="contact-form">
+                             <form class="contact-form" method="post" action="contact.php">
                                 
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="name" placeholder="  Name">
+                                        <input  name="name" type="text" class="form-control" id="name" required="required" placeholder="  Name">
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control" id="email" placeholder="  Email">
+                                        <input name="email" type="email" class="form-control" id="email" required="required" placeholder="  Email">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="  Subject">
+                                        <input name="subject" type="text" class="form-control" id="subject" required="required" placeholder="  Subject">
                                     </div>
                                 </div>
 
                                 <div class="col-md-6 col-sm-6">
-                                    <textarea type="text" class="form-control" id="message" rows="7" placeholder="  Message"></textarea>
+                                    <textarea name="message" type="text" class="form-control" id="message" rows="7" required="required" placeholder="  Message"></textarea>
                                 </div>
 
                                 <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
                                     <div class="text-center">
-                                        <a href="#" class="btn btn-send">Send </a>
+                                        <button type="submit" id="submit" name="submit" class="btn btn-send">Send </button>
                                     </div>
                                 </div>
                             </form>
@@ -964,6 +961,7 @@
         <script type="text/javascript" src="js/jssor.utils.js"></script>
         <script type="text/javascript" src="js/jssor.slider.js"></script>
         <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+        <!--  <script src="https://maps.googleapis.com/maps/api/js"></script> -->
         <script src="js/script.js"></script>
 
 
@@ -1096,6 +1094,14 @@
             });
         </script>
 
+
+        <!--   script for date-picker -->
+
+        <script>
+            $(function() {
+                $( "#datepicker" ).datepicker();
+            });
+        </script>
         
 
     </body>
