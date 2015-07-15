@@ -13,11 +13,25 @@
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/owl.theme.css">
         <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="nivo-lightbox/nivo-lightbox.css">
-        <link rel="stylesheet" href="nivo-lightbox/nivo-lightbox-theme.css">
+        <!-- <link rel="stylesheet" href="nivo-lightbox/nivo-lightbox.css">
+        <link rel="stylesheet" href="nivo-lightbox/nivo-lightbox-theme.css"> -->
+        <link rel="stylesheet" href="css/flexslider.css">
         <link rel="stylesheet" href="css/pricing.css">
-        <link rel="stylesheet" href="css/menu-gallery.css">
+        <!-- <link rel="stylesheet" href="css/menu-gallery.css"> -->
         <link rel="stylesheet" href="css/main.css">
+
+
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+        <script type="text/javascript">
+            $(window).load(function() {
+                $('.flexslider').flexslider({
+                 animation: "slide",
+                 controlsContainer: ".flexslider-container"
+                });
+            });
+        </script>
+
 
     </head>
     <body data-spy="scroll" data-target="#template-navbar">
@@ -655,109 +669,57 @@
             <img class="img-responsive section-icon hidden-sm hidden-xs" src="images/icons/food_color.png">
             <div class="wrapper">
                 <div class="container-fluid">
-                    <div class="row dis-table">
-                        <div class="col-xs-12 col-sm-6 dis-table-cell">
+                    <div class="row">
 
-
-                            <div id="slider1_container" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: #191919; overflow: hidden;">
-
-                                <!-- Loading Screen -->
-                                <div u="loading" style="position: absolute; top: 0px; left: 0px;">
-                                    <div style="filter: alpha(opacity=0); opacity:0; position: absolute; display: block;
-                                        background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;">
-                                    </div>
-                                    <div style="position: absolute; display: block; background: url(../images/loading.gif) no-repeat center center;
-                                        top: 0px; left: 0px;width: 100%;height:100%;">
-                                    </div>
+                        <div class="menu-gallery" style="width: 50%; float:left;">
+                            <div class="flexslider-container">
+                                <div class="flexslider">
+                                    <ul class="slides">
+                                        <li>
+                                            <img src="images/menu-gallery/menu1.png" />
+                                        </li>
+                                        <li>
+                                            <img src="images/menu-gallery/menu2.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="images/menu-gallery/menu3.png" />
+                                        </li>
+                                        <li>
+                                            <img src="images/menu-gallery/menu4.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="images/menu-gallery/menu5.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="images/menu-gallery/menu6.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="images/menu-gallery/menu7.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="images/menu-gallery/menu8.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="images/menu-gallery/menu9.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="images/menu-gallery/menu10.jpg" />
+                                        </li>
+                                        <li>
+                                            <img src="images/menu-gallery/menu11.jpg" />
+                                        </li>
+                                    </ul>
                                 </div>
-
-                                <!-- Slides Container -->
-                                <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 665px; overflow: hidden;">
-                                    <div>
-                                        <img u="image" src="images/menu-gallery/menu1.png" />
-                                        <img u="thumb" src="images/menu-gallery/menu1-thumb.png" />
-                                    </div>
-                                    <div>
-                                        <img u="image" src="images/menu-gallery/menu2.jpg" />
-                                        <img u="thumb" src="images/menu-gallery/menu2-thumb.jpg" />
-                                    </div>
-                                    <div>
-                                        <img u="image" src="images/menu-gallery/menu3.png" />
-                                        <img u="thumb" src="images/menu-gallery/menu3-thumb.png" />
-                                    </div>
-                                    <div>
-                                        <img u="image" src="images/menu-gallery/menu4.jpg" />
-                                        <img u="thumb" src="images/menu-gallery/menu4-thumb.jpg" />
-                                    </div>
-                                    <div>
-                                        <img u="image" src="images/menu-gallery/menu5.jpg" />
-                                        <img u="thumb" src="images/menu-gallery/menu5-thumb.jpg" />
-                                    </div>
-                                    <div>
-                                        <img u="image" src="images/menu-gallery/menu6.jpg" />
-                                        <img u="thumb" src="images/menu-gallery/menu6-thumb.jpg" />
-                                    </div>
-                                    <div>
-                                        <img u="image" src="images/menu-gallery/menu7.jpg" />
-                                        <img u="thumb" src="images/menu-gallery/menu7-thumb.jpg" />
-                                    </div>
-                                    <div>
-                                        <img u="image" src="images/menu-gallery/menu8.jpg" />
-                                        <img u="thumb" src="images/menu-gallery/menu8-thumb.jpg" />
-                                    </div>
-                                    <div>
-                                        <img u="image" src="images/menu-gallery/menu9.jpg" />
-                                        <img u="thumb" src="images/menu-gallery/menu9-thumb.jpg" />
-                                    </div>
-                                    <div>
-                                        <img u="image" src="images/menu-gallery/menu10.jpg" />
-                                        <img u="thumb" src="images/menu-gallery/menu10-thumb.jpg" />
-                                    </div>
-                                    
-                                    <div>
-                                        <img u="image" src="images/menu-gallery/menu11.jpg" />
-                                        <img u="thumb" src="images/menu-gallery/menu11-thumb.jpg" />
-                                    </div>
-                                    <div>
-                                        <img u="image" src="images/menu-gallery/menu12.jpg" />
-                                        <img u="thumb" src="images/menu-gallery/menu12-thumb.jpg" />
-                                    </div>
-                                </div>
-                                
-
-                                <!-- Arrow Left -->
-                                <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 48%; left: 8px;">
-                                </span>
-                                <!-- Arrow Right -->
-                                <span u="arrowright" class="jssora05r" style="width: 40px; height: 40px; top: 48%; right: 8px">
-                                </span>
-                                <!-- Arrow Navigator Skin End -->
-                                
-                                <!-- Thumbnail Navigator Skin Begin -->
-                                <div u="thumbnavigator" class="jssort01" style="position: absolute; width: 800px; height: 86px; left:0px; bottom: 0px;">
-                                    
-                                    <div u="slides" style="cursor: move;">
-                                        <div u="prototype" class="p" style="position: absolute; width: 72px; height: 72px; top: 0; left: 0;">
-                                            <div class=w><thumbnailtemplate style=" width: 100%; height: 100%; border: none; position:absolute; top: 0; left: 0;"></thumbnailtemplate></div>
-                                            <div class=c>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Thumbnail Item Skin End -->
-                                </div>
-                                <!-- Thumbnail Navigator Skin End -->
-                                <a style="display: none" href="http://www.jssor.com">slideshow</a>
                             </div>
-
-
-
-                            
                         </div>
-                        <div class="hidden-xs dis-table-cell color-bg">
+
+                        <div class="gallery-heading hidden-xs color-bg" style="width: 50%; float:right;">
                             <h2 class="section-title">Have A Look To Our Dishes</h2>
                         </div>
-                    </div> <!-- /.dis-table -->
-                </div> <!-- /.row -->
+                        
+
+                    </div> <!-- /.row -->
+                </div> <!-- /.container-fluid -->
             </div> <!-- /.wrapper -->
         </section>
 
@@ -951,15 +913,15 @@
         
         <!-- <a href="#header" id="back-to-top" class="top"><i class="fa fa-chevron-up"></i></a> -->
     
-        <script src="js/jquery-1.11.2.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script type="text/javascript" src="js/jquery.mixitup.min.js" ></script>
         <script src="js/wow.min.js"></script>
         <script src="js/jquery.validate.js"></script>
-        <script type="text/javascript" src="js/jssor.core.js"></script>
+        <!--<script type="text/javascript" src="js/jssor.core.js"></script>
         <script type="text/javascript" src="js/jssor.utils.js"></script>
-        <script type="text/javascript" src="js/jssor.slider.js"></script>
+        <script type="text/javascript" src="js/jssor.slider.js"></script> -->
+        
         <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
         <!--  <script src="https://maps.googleapis.com/maps/api/js"></script> -->
         <script src="js/script.js"></script>
@@ -979,9 +941,27 @@
         </script>
 
 
+
+        <!--   script  for  menu  gallery  -->
+
+        <!-- <script type="text/javascript">
+            $(document).ready(function() {
+ 
+                $("#menu-gallery").owlCarousel({
+                 
+                    autoPlay: 5000, //Set AutoPlay to 3 seconds
+                    stopOnHover: true,
+                    singleItem:true,
+                    pagination:true
+                });
+ 
+            });
+        </script> -->
+
+
         <!--  script for slider in the section of "have a look to our dishes"  -->
 
-         <script type="text/javascript">
+         <!-- <script type="text/javascript">
 
             jQuery(document).ready(function ($) {
 
@@ -1092,16 +1072,16 @@
                 //}
                 //responsive code end
             });
-        </script>
+        </script> -->
 
 
         <!--   script for date-picker -->
 
-        <script>
+        <!-- <script>
             $(function() {
-                $( "#datepicker" ).datepicker();
+                $("#datepicker").datepicker();
             });
-        </script>
+        </script> -->
         
 
     </body>
