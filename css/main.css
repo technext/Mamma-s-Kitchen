@@ -625,14 +625,14 @@ nav.shrink .navbar-toggle {
 
 footer
 {
-	background-color: #272727;
+	background-color: #8BC34A;
 	color: #ffffff;
 	padding: 30px 0px;
 }
 
 footer a
 {
-	color: #ffffff;
+	color: #3D6F0B;
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 		-mz-transition: all 0.3s ease-in-out;
@@ -642,8 +642,8 @@ footer a
 
 footer a:hover
 {
+	color: #0000CD;
 	text-decoration: none;
-	color: #8bc34a;
 }
 /*=================================================
 ||				18. Media Query
