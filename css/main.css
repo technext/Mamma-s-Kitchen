@@ -561,6 +561,7 @@ nav.shrink .navbar-toggle {
 	width: 100%;
 	left: 5%;
 	margin-top: -58px;
+	z-index: 999;
 }
 
 .social-media li
@@ -615,6 +616,11 @@ nav.shrink .navbar-toggle {
 	background: url(../images/social/linkedin_black.png);
 }
 
+#map-canvas {
+    width: 100%;
+    height: 350px;
+}
+
 .contact-form
 {
 	padding: 50px 0px;
@@ -632,7 +638,7 @@ footer
 
 footer a
 {
-	color: #3D6F0B;
+	color: #5C9233;
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 		-mz-transition: all 0.3s ease-in-out;
@@ -642,7 +648,7 @@ footer a
 
 footer a:hover
 {
-	color: #0000CD;
+	color: #00710A;
 	text-decoration: none;
 }
 /*=================================================
